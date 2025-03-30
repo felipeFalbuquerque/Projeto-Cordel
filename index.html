@@ -1,104 +1,171 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="en">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Musashi</title>
+    <title>Document</title>
+
     <style>
-        @font-face {
-            font-family: 'samurai';
-            src: url(samurai.ttf);
+        * {
+            margin: 0px;
+            padding: 0px;
         }
 
-        header h1 {
-            font-family: 'samurai';
-            color: white;
-            margin: auto;
-            text-align: center;
+        :root {
+            --paragrafo: #2d334a;
+            --cor2: orange;
+            --cor3: green;
+            --fonte-padrao: 'passion-regular';
+            --fonte-negrito: 'passion-bold';
+            --fonte-texto: 'fonte-texto'
+            
+        }
+
+        @font-face {
+            font-family: 'passion-regular';
+            src: url(PassionOne-Regular.ttf);
+            font-family: 'passion-bold';
+            src: url(PassionOne-Bold.ttf);
+            font-family: 'fonte-texto';
+            src: url(Sriracha-Regular.ttf);
+
         }
 
         header {
-            background-color: #2e2f3e;
-            padding: 40px;
-            max-width: 1200px;
+            background-color: black;
+            padding: 20px;
         }
 
-        body {
-            background-color: #fffffe;
+        header h1 {
+            padding-top: 40px;
+            color: white;
+            text-align: center;
+            font-family: var(--fonte-negrito);
+            font-size: 9vw;
+            margin: auto;
         }
+
         header p {
             color: white;
             text-align: center;
-            font-weight: bold;
-            font-size: 15px;
-            font-family: Arial, Helvetica, sans-serif;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            margin: auto;
         }
-        main{
-            background-color: #fffffe;
+
+        a {
+            text-decoration: none;
+            color: white;
+        }
+
+        a:hover {
+            text-decoration: underline;
         }
         p{
-            color: #c3c4d1;
+            max-width: 620px;
+            font-family: var(--fonte-texto);
+            padding-left: 30px;
+            padding-top: 20px;
+            font-size: 40px;
         }
-        h2{
-            color: #ff8906;
-            padding-left: 20px;
-        }
-        #primeirafoto{
-            background-image: url(download\ \(2\).jpg);
-            background-repeat: no-repeat;
+        .foto{
+            position: relative;
             background-attachment: fixed;
             background-size: cover;
-            height: 70vh;
-            box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.514);
-            border-radius: 6px;
-        }
-        #conteudo1{
-            background-color: rgba(128, 128, 128, 0.699);
-            min-width: 320px;
-            max-width: 320px;
-            background-position: bottom center;
-            padding: 20px;
-            border-radius: 10px;
-            padding-top: 10px;
-            margin-top: 10px;
-            margin-left: 300px;
+            background-repeat: no-repeat;
+            height: 80vh;
 
- 
+        }
+        .texto{
+            background-color: rgba(211, 211, 211, 0.555);
+            width: 600px;
+            border-radius: 3px;
+            transform: translate(5%, 10%);
+        }
+        #primeirafoto{
+            background-image: url(images.jpg);
+        }
+        #segundafoto{
+            background-image: url(download\ \(2\).jpg);
         }
     </style>
 </head>
 
 <body>
     <header>
-        <h1>
-            Musashi Miyamoto
-        </h1>
-        <p>Miyamoto Musashi foi um samurai imbatível, estrategista genial, mestre da espada e um filósofo cuja sabedoria transcende o tempo.</p>
+        <h1>CORDEL MODERNO</h1>
+        <p><a href="https://www.recantodasletras.com.br/poesias/3186743" target="_blank" rel="externo">Por
+                <strong>Milton Duarte</strong></a></p>
     </header>
     <main>
-        <div id="primeirafoto">
-            <div id="conteudo1">
-                <h2>Infância e Formação</h2>
-                <p>Nascido em 1584, em Harima ou Mimasaka (regiões do Japão), Musashi perdeu os pais ainda jovem e foi criado por um tio, que lhe ensinou as bases do budismo e das artes marciais. Desde cedo, demonstrou um talento excepcional para o combate.</p>
-            
-        
-        <h2>Duelo Contra Sasaki Kojirō</h2>
-        <p>Musashi participou de seu primeiro duelo registrado aos 13 anos e venceu. No decorrer de sua vida, teve cerca de 60 duelos, supostamente sem nunca ser derrotado. Seu combate mais famoso ocorreu em 1612, contra Sasaki Kojirō, um habilidoso espadachim. Musashi chegou atrasado de propósito para desestabilizar o adversário e o derrotou com uma espada de madeira feita de um remo.</p>
-    </div>
-    </div>
-        <h2>A Estratégia dos Dois Sabres</h2>
-        <p>Diferente de outros samurais, que usavam apenas uma espada, Musashi desenvolveu e refinou a técnica de combate com duas espadas ao mesmo tempo, chamada Niten Ichi-ryū (O Estilo das Duas Espadas).</p>
-        <h2>Vida como Filósofo e Escritor</h2>
-        <p>Após anos como guerreiro, Musashi se dedicou à reflexão sobre a arte da guerra e a filosofia da vida. Ele escreveu O Livro dos Cinco Anéis (Go Rin No Sho), onde explicou sua estratégia marcial e princípios que também podem ser aplicados a negócios, liderança e autodesenvolvimento.</p>
-        <h2>Últimos Anos e Morte</h2>
-        <p>Nos últimos anos de sua vida, Musashi se retirou para uma caverna chamada Reigandō, onde escreveu suas obras e meditou. Ele faleceu em 1645, provavelmente devido a uma doença.</p>
-        <h2>Legado</h2>
-        <p>Musashi se tornou uma lenda e continua a inspirar artistas marciais, estrategistas e pessoas em busca de autoconhecimento. Sua filosofia de disciplina, adaptação e estratégia ainda ressoa nos dias de hoje.</p>
-    </main>
-    <footer>
+        <p>Estou ficando cansado
+            Da tal tecnologia
+            Só se fala por e-mail
+            Mensagem curta e fria
+            Twitter e Facebook
+            Antes que eu caduque
+            Vou dizer tudo em poesia.</p>
 
-    </footer>
+            <div class="foto" id="primeirafoto">
+                <div class="texto">
+                    <p>
+                        Não é mais como era antes
+                        É tudo abreviado
+                        "Você" só tem duas letras
+                        O "O" e o "E" foi riscado
+                        Para declarar o amor
+                        Basta botar uma flor
+                        E um coração desenhado.
+                    </p>
+                </div>
+            </div>
+            <p>
+                Arroba agora não pesa
+                É parte de um endereço
+                Ponto final nem se usa
+                Ou vai até no começo
+                Agora é .com
+                Se o saite é muito bom
+                Ele vale um alto preço.
+                Pra piorar a liguagem
+                O emoticom é um risco
+                Tem símbolo para tudo
+                Ponto e vírgula e um asterisco
+                Um beijo significa
+                Pra entender como fica
+                Decifre esse rabisco.
+            </p>
+
+            <div class="foto" id="segundafoto">
+                <div class="texto">
+                    <p>
+                        Tenho saudade das cartas
+                        Escritas com a própria mão
+                        Mandava no mês de Junho
+                        Só chegava no Verão
+                        Mas matava a saudade
+                        Era texto de verdade
+                        Nas linhas do coração.
+                    </p>
+                </div>
+            </div>
+            <p>
+                Agora, escrevo e envio
+                Chegando na mesma hora
+                Mas quando vou prosear
+                A pessoa foi embora
+                Abriu outro aplicativo
+                O mundo ficou cativo
+                Da tecnologia do agora.
+                Felizmente, pra orar
+                Não precisa de internet
+                Deus escuta todo mundo
+                Se quiser, faça esse teste
+                Dois pontos são dois joelhos
+                Seus lábios são aparelhos
+                Deixe que Deus interprete.</p>
+    </main>
+    <footer></footer>
 </body>
 
 </html>
