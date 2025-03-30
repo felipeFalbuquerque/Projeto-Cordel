@@ -1,171 +1,173 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="en">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Projeto-Cordel</title>
-
+    <title>Musashi Miyamoto</title>
+    <link rel="shortcut icon" href="samurai.png" type="image/x-icon">
     <style>
-        * {
-            margin: 0px;
-            padding: 0px;
-        }
-
         :root {
-            --paragrafo: #2d334a;
-            --cor2: orange;
-            --cor3: green;
-            --fonte-padrao: 'passion-regular';
-            --fonte-negrito: 'passion-bold';
-            --fonte-texto: 'fonte-texto'
-            
+            --fonteoswald: 'oswald';
+            --fontecinzel: 'cinzel';
         }
 
         @font-face {
-            font-family: 'passion-regular';
-            src: url(PassionOne-Regular.ttf);
-            font-family: 'passion-bold';
-            src: url(PassionOne-Bold.ttf);
-            font-family: 'fonte-texto';
-            src: url(Sriracha-Regular.ttf);
+            font-family: 'cinzel';
+            src: url(Cinzel-VariableFont_wght.ttf);
+            font-family: 'oswald';
+            src: url(Oswald-VariableFont_wght.ttf);
+        }
 
+        * {
+            padding: 0px;
+            margin: 0px;
+        }
+
+        @font-face {
+            font-family: 'samurai';
+            src: url(samurai.ttf);
         }
 
         header {
             background-color: black;
-            padding: 20px;
         }
 
         header h1 {
-            padding-top: 40px;
-            color: white;
+            color: #F28E13;
             text-align: center;
-            font-family: var(--fonte-negrito);
-            font-size: 9vw;
-            margin: auto;
+            font-family: var(--fonteoswald);
+            padding-top: 18px;
+            font-size: 11vh;
         }
 
         header p {
-            color: white;
+            color: #F29B30;
             text-align: center;
-            font-family: Verdana, Geneva, Tahoma, sans-serif;
-            margin: auto;
-        }
-
-        a {
-            text-decoration: none;
-            color: white;
-        }
-
-        a:hover {
-            text-decoration: underline;
-        }
-        p{
-            max-width: 620px;
-            font-family: var(--fonte-texto);
-            padding-left: 30px;
-            padding-top: 20px;
+            font-family: var(--fonteoswald);
             font-size: 40px;
         }
-        .foto{
+
+        p {
+            font-family: var(--fonteoswald);
+            color: #261808;
+        }
+
+        .foto {
             position: relative;
+            background-repeat: no-repeat;
             background-attachment: fixed;
             background-size: cover;
-            background-repeat: no-repeat;
-            height: 80vh;
+            height: 50vh;
+        }
 
-        }
-        .texto{
-            background-color: rgba(211, 211, 211, 0.555);
-            width: 600px;
+        .texto {
+            width: 300px;
+            background-color: rgba(211, 211, 211, 0.568);
             border-radius: 3px;
-            transform: translate(5%, 10%);
+            transform: translate(10%, 5%);
+            padding: 10px;
         }
-        #primeirafoto{
-            background-image: url(images.jpg);
-        }
-        #segundafoto{
+
+        #primeirafoto {
             background-image: url(download\ \(2\).jpg);
+            background-position: bottom center;
+        }
+
+        #segundafoto {
+            background-image: url(images.png);
+            background-position: top center;
+        }
+
+        #footer {
+            font-family: var(--fonteoswald);
+            color: white;
+            background-color: black;
+            padding: 10px;
+            text-align: center;
+            margin: 10px;
+        }
+        main{
+            padding-left: 10px;
+            background-color: rgb(190, 190, 190);
         }
     </style>
 </head>
 
 <body>
     <header>
-        <h1>CORDEL MODERNO</h1>
-        <p><a href="https://www.recantodasletras.com.br/poesias/3186743" target="_blank" rel="externo">Por
-                <strong>Milton Duarte</strong></a></p>
+        <h1>Musashi Miyamoto</h1>
+        <p>Invencível sob o sol</p>
     </header>
     <main>
-        <p>Estou ficando cansado
-            Da tal tecnologia
-            Só se fala por e-mail
-            Mensagem curta e fria
-            Twitter e Facebook
-            Antes que eu caduque
-            Vou dizer tudo em poesia.</p>
 
-            <div class="foto" id="primeirafoto">
-                <div class="texto">
-                    <p>
-                        Não é mais como era antes
-                        É tudo abreviado
-                        "Você" só tem duas letras
-                        O "O" e o "E" foi riscado
-                        Para declarar o amor
-                        Basta botar uma flor
-                        E um coração desenhado.
-                    </p>
-                </div>
-            </div>
-            <p>
-                Arroba agora não pesa
-                É parte de um endereço
-                Ponto final nem se usa
-                Ou vai até no começo
-                Agora é .com
-                Se o saite é muito bom
-                Ele vale um alto preço.
-                Pra piorar a liguagem
-                O emoticom é um risco
-                Tem símbolo para tudo
-                Ponto e vírgula e um asterisco
-                Um beijo significa
-                Pra entender como fica
-                Decifre esse rabisco.
-            </p>
+        <p>
+            Miyamoto Musashi nasceu em 1584, no Japão feudal, em uma época marcada por constantes conflitos entre clãs e
+            senhores da guerra. Desde jovem, demonstrou grande habilidade no combate e desenvolveu um espírito
+            independente, recusando-se a seguir o caminho tradicional dos samurais sob um senhor.</p>
 
-            <div class="foto" id="segundafoto">
-                <div class="texto">
-                    <p>
-                        Tenho saudade das cartas
-                        Escritas com a própria mão
-                        Mandava no mês de Junho
-                        Só chegava no Verão
-                        Mas matava a saudade
-                        Era texto de verdade
-                        Nas linhas do coração.
-                    </p>
-                </div>
+        <div class="foto" id="primeirafoto">
+            <div class="texto">
+                <p>
+                    Aos 13 anos, Musashi venceu seu primeiro duelo contra um espadachim mais experiente. Esse evento
+                    marcou o início de sua jornada como guerreiro errante, dedicando-se ao aperfeiçoamento de sua
+                    técnica e filosofia de combate. Ao longo da vida, ele enfrentaria e derrotaria mais de 60
+                    adversários em duelos fatais.
+                    Uma das lutas mais famosas de Musashi ocorreu contra Sasaki Kojirō, um dos espadachins mais
+                    renomados do período. O duelo aconteceu em 1612, em uma ilha, onde Musashi derrotou Kojirō
+                    utilizando uma espada de madeira que ele próprio esculpiu a partir de um remo.
+                </p>
             </div>
-            <p>
-                Agora, escrevo e envio
-                Chegando na mesma hora
-                Mas quando vou prosear
-                A pessoa foi embora
-                Abriu outro aplicativo
-                O mundo ficou cativo
-                Da tecnologia do agora.
-                Felizmente, pra orar
-                Não precisa de internet
-                Deus escuta todo mundo
-                Se quiser, faça esse teste
-                Dois pontos são dois joelhos
-                Seus lábios são aparelhos
-                Deixe que Deus interprete.</p>
+        </div>
+
+        <p>Além de guerreiro, Musashi era um artista e estrategista. Ele desenvolveu o estilo de luta Niten Ichi-ryū,
+            que combinava o uso de duas espadas simultaneamente. Esse método revolucionário tornou-se uma de suas marcas
+            registradas e influenciou gerações de espadachins.</p>
+
+        <p>Nos anos finais de sua vida, Musashi afastou-se dos duelos e dedicou-se à escrita e à arte. Foi nessa época
+            que ele escreveu "O Livro dos Cinco Anéis", um tratado sobre estratégia, táticas e filosofia, que até hoje é
+            estudado por lutadores, líderes e estudiosos do Japão feudal.</p>
+        <p>Miyamoto Musashi faleceu em 1645, deixando um legado imortal no mundo das artes marciais e da estratégia. Sua
+            filosofia de vida, baseada na disciplina, adaptação e aperfeiçoamento constante, continua a inspirar pessoas
+            em diversas áreas até os dias de hoje.
+            Mesmo após conquistar a fama como espadachim imbatível, Musashi nunca se acomodou. Ele acreditava que a
+            verdadeira vitória vinha do aperfeiçoamento contínuo, e por isso dedicou-se ao estudo da estratégia, da arte
+            e da filosofia. Sua jornada não era apenas sobre vencer batalhas, mas sobre compreender a essência do
+            combate e da vida.</p>
+        <p>Seu legado transcendeu os campos de batalha e inspirou gerações em diversas áreas. A filosofia de Musashi,
+            baseada na adaptação e no autocontrole, influenciou não apenas guerreiros, mas também líderes, empresários e
+            artistas. Até hoje, suas lições ressoam como um guia para aqueles que buscam a maestria em qualquer caminho
+            que escolham seguir.</p>
+        <div class="foto" id="segundafoto">
+            <div class="texto">
+                <p>
+                    Musashi não foi apenas um mestre da espada, mas também um estrategista brilhante. Seu estilo de
+                    combate reflete uma filosofia de adaptação constante ao inimigo e ao ambiente. Ele acreditava que a
+                    verdadeira força vinha da capacidade de mudar e se moldar às circunstâncias, uma lição que
+                    transcende as artes marciais e se aplica a todas as áreas da vida.
+                    Ao longo de sua vida, Musashi se distanciou das batalhas e duelos, dedicando-se ao autoconhecimento
+                    e à meditação. Ele via o combate não apenas como uma luta física, mas também como um processo mental
+                    e espiritual.
+            </div>
+        </div>
+        <p>Seu entendimento profundo sobre o equilíbrio entre corpo e mente o tornou não apenas
+            um guerreiro imbatível, mas um verdadeiro mestre da arte de viver.</p>
+
+
+        <p>Musashi também se destacou como artista e pintor. Suas obras refletem sua visão única do mundo e sua conexão
+            profunda com a natureza. Ele acreditava que a arte, assim como a luta, era uma forma de expressar a verdade
+            e a beleza do universo. Seus desenhos e pinturas continuam sendo estudados por aqueles que buscam entender
+            sua visão filosófica.
+            A filosofia de Musashi, resumida em "O Livro dos Cinco Anéis", permanece como um dos maiores legados da
+            história japonesa. Seus ensinamentos sobre estratégia, paciência e disciplina continuam a ser aplicados em
+            diversas áreas, desde os campos de batalha até o mundo dos negócios e da liderança. Musashi mostrou ao mundo
+            que o caminho do samurai é, antes de tudo, o caminho do autoconhecimento.</p>
+        </p>
+        <footer>
+            <p id="footer">Feito por kkfelpe_capudo123</p>
+        </footer>
     </main>
-    <footer></footer>
+    
 </body>
 
 </html>
